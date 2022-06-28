@@ -1,0 +1,20 @@
+﻿@page
+@model ListModel
+@{
+    ViewData["Title"] = "Room List";
+}
+<h1>@ViewData["Title"]</h1>
+
+@foreach(string room in Model.Rooms)
+{
+    <div>
+    <div>
+    <a href="/Room">
+        <img src="res/doll.png" width="150px" height="200px" />
+    </a>    
+
+    </div>
+    <div>@room</div>
+    </div>
+}
+
