@@ -24,16 +24,16 @@ namespace Claw.Pages
 				clientSocket.Connect(new IPEndPoint(IPAddress.Parse("3.20.235.8"), 7771));
 
 				byte[] date = new byte[1024];
-				int count = clientSocket.Receive(date);
-				string msg = Encoding.UTF8.GetString(date, 0, count);
-				Console.WriteLine(msg);
+				//int count = clientSocket.Receive(date);
+				//string msg = Encoding.UTF8.GetString(date, 0, count);
+				//Console.WriteLine(msg);
 
 				string s = "{{\"cmd\":\"req_roomlist\"}}";
 
 				clientSocket.Send(Encoding.UTF8.GetBytes(s));
 
-				count = clientSocket.Receive(date);
-				msg = Encoding.UTF8.GetString(date, 0, count);
+				int count = clientSocket.Receive(date);
+				string msg = Encoding.UTF8.GetString(date, 0, count);
 				Console.WriteLine(msg);
 
 				clientSocket.Close();
