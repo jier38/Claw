@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\john_huang\\source\\repos\\Claw\\Claw\\Claw.csproj": {}
+    "D:\\TEMP\\Claw\\Claw\\Claw.csproj": {}
   },
   "projects": {
-    "C:\\Users\\john_huang\\source\\repos\\Claw\\Claw\\Claw.csproj": {
+    "D:\\TEMP\\Claw\\Claw\\Claw.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\john_huang\\source\\repos\\Claw\\Claw\\Claw.csproj",
+        "projectUniqueName": "D:\\TEMP\\Claw\\Claw\\Claw.csproj",
         "projectName": "Claw",
-        "projectPath": "C:\\Users\\john_huang\\source\\repos\\Claw\\Claw\\Claw.csproj",
+        "projectPath": "D:\\TEMP\\Claw\\Claw\\Claw.csproj",
         "packagesPath": "C:\\Users\\john_huang\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\john_huang\\source\\repos\\Claw\\Claw\\obj\\",
+        "outputPath": "D:\\TEMP\\Claw\\Claw\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

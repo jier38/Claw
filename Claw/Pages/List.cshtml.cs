@@ -20,24 +20,24 @@ namespace Claw.Pages
 		{
 			try
 			{
-				////Socket clientSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-				////clientSocket.Connect(new IPEndPoint(IPAddress.Parse("192.168.43.76"), 8000));
+				Socket clientSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+				clientSocket.Connect(new IPEndPoint(IPAddress.Parse("3.20.235.8"), 7771));
 
-				////byte[] date = new byte[1024];
-				////int count = clientSocket.Receive(date);
-				////string msg = Encoding.UTF8.GetString(date, 0, count);
-				////Console.WriteLine(msg);
+				byte[] date = new byte[1024];
+				int count = clientSocket.Receive(date);
+				string msg = Encoding.UTF8.GetString(date, 0, count);
+				Console.WriteLine(msg);
 
-				////string s = "{\"cmd\":\"req_roomlist\"}";
+				string s = "{{\"cmd\":\"req_roomlist\"}}";
 
-				////clientSocket.Send(Encoding.UTF8.GetBytes(s));
+				clientSocket.Send(Encoding.UTF8.GetBytes(s));
 
-				////count = clientSocket.Receive(date);
-				////msg = Encoding.UTF8.GetString(date, 0, count);
-				////Console.WriteLine(msg);
+				count = clientSocket.Receive(date);
+				msg = Encoding.UTF8.GetString(date, 0, count);
+				Console.WriteLine(msg);
 
-				////clientSocket.Close();
-				///
+				clientSocket.Close();
+				
 
 				Rooms = new List<string>();
 				Rooms.Add("Machine 1");
