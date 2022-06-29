@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
+using System.Text.Json;
 
 namespace Claw.Pages
 {
@@ -22,9 +23,12 @@ namespace Claw.Pages
 			{
 				Socket clientSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
 				clientSocket.Connect(new IPEndPoint(IPAddress.Parse("3.20.235.8"), 7771));
-								
-				string s = "{{\"cmd\":\"req_roomlist\"}}";
-				byte[] jsoncmd = Encoding.UTF8.GetBytes(s);
+
+				jsonmessage s = new jsonmessage() { cmd = "req_roomlist" };
+				string ss = JsonSerializer.Serialize(s);
+
+
+                byte[] jsoncmd = Encoding.UTF8.GetBytes(ss);
 				byte[] smsg = new byte[3 + jsoncmd.Length];
 				smsg[0] = (byte)0xda;
 				smsg[1] = (byte)(jsoncmd.Length / 256);
@@ -52,4 +56,18 @@ namespace Claw.Pages
 			
 		}
 	}
+
+	public class jsonmessage
+    {
+        //room list reply:{"rooms":["ACF1E188BE65"],"cmd":"reply_roomlist"}
+        //jsstr{"cmd":"enter_room","mac":"ACF1E188BE65"}
+        //jsstr{"cmd":"start_game"}
+        //jsstr{"cmd":"operation","type":1}
+        //jsstr{"cmd":"operation","type":4} 抓
+        //jsstr{"cmd":"exit_room"}
+
+        public string cmd { set; get; }
+        public string type { set; get; }
+        public string[] room { set; get; }
+    }
 }

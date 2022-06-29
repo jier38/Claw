@@ -7,8 +7,9 @@
 <h1>@ViewData["Title"]</h1>
 
 <div>
-    <div style="float:left; width:300px; height:500px;border:3px solid blue;" id="video1"></div>
-    <div style="float:left; width:300px; height:500px;border:3px solid blue;" id="video2"></div>
+    <div>
+        <video name="videoElement1" class="centeredVideo" autoplay></video>
+    </div>
     <div>
         <button type="button" id="btnStart">Start</button>
         <button type="button" id="btnUp">Up</button>
@@ -37,12 +38,12 @@
     }
     
     if (flvjs.isSupported()) {
-        var videoElement = document.getElementById('video1');
+        var element = document.getElementsByName('videoElement1')[0];
         var flvPlayer = flvjs.createPlayer({
             type: 'flv',
-            url: 'http://example.com/flv/video.flv'
+            url: 'http://3.20.235.8:8080/live/livestream1.flv'
         });
-        flvPlayer.attachMediaElement(videoElement);
+        flvPlayer.attachMediaElement(element);
         flvPlayer.load();
         flvPlayer.play();
     }
