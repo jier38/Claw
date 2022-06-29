@@ -7,8 +7,8 @@
 <h1>@ViewData["Title"]</h1>
 
 <div>
-    <div style="float:left;">Streamin1</div>
-    <div style="float:left;">Streaming2<div>
+    <div style="float:left; width:300px; height:500px;border:3px solid blue;" id="video1"></div>
+    <div style="float:left; width:300px; height:500px;border:3px solid blue;" id="video2"></div>
     <div>
         <button type="button" id="btnStart">Start</button>
         <button type="button" id="btnUp">Up</button>
@@ -19,6 +19,7 @@
     </div>
 </div>
 
+<script src="/js/flv.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
         integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
         crossorigin="anonymous"></script>
@@ -33,6 +34,17 @@
         $.get("Room?handler=Close").done(function(res) {
               
         });
+    }
+    
+    if (flvjs.isSupported()) {
+        var videoElement = document.getElementById('video1');
+        var flvPlayer = flvjs.createPlayer({
+            type: 'flv',
+            url: 'http://example.com/flv/video.flv'
+        });
+        flvPlayer.attachMediaElement(videoElement);
+        flvPlayer.load();
+        flvPlayer.play();
     }
 
 </script>
