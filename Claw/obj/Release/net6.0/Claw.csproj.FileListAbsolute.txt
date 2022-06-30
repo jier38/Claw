@@ -24,3 +24,5 @@ D:\TEMP\Claw\Claw\obj\Release\net6.0\refint\Claw.dll
 D:\TEMP\Claw\Claw\obj\Release\net6.0\Claw.pdb
 D:\TEMP\Claw\Claw\obj\Release\net6.0\Claw.genruntimeconfig.cache
 D:\TEMP\Claw\Claw\obj\Release\net6.0\ref\Claw.dll
+D:\TEMP\Claw\Claw\bin\Release\net6.0\wwwroot\js\flv.js
+D:\TEMP\Claw\Claw\bin\Release\net6.0\wwwroot\res\doll.png
