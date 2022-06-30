@@ -5,20 +5,35 @@
 }
 <body onunload="HandleOnClose()">
 <h1>@ViewData["Title"]</h1>
+    <div>
+        <table border="0">
+            <tr>
+                <td>
+                    <div>
+                        <video name="videoElement1" class="centeredVideo" autoplay></video>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <video name="videoElement2" class="centeredVideo" autoplay></video>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div>
+                        <button type="button" id="btnStart">Start</button>
+                        <button type="button" id="btnUp">Up</button>
+                        <button type="button" id="btnDown">Down</button>
+                        <button type="button" id="btnLeft">Left</button>
+                        <button type="button" id="btnRight">Right</button>
+                        <button type="button" id="btnDrop">Drop</button>
+                    </div>
 
-<div>
-    <div>
-        <video name="videoElement1" class="centeredVideo" autoplay></video>
+                </td>
+            </tr>
+        </table>
     </div>
-    <div>
-        <button type="button" id="btnStart">Start</button>
-        <button type="button" id="btnUp">Up</button>
-        <button type="button" id="btnDown">Down</button>
-        <button type="button" id="btnLeft">Left</button>
-        <button type="button" id="btnRight">Right</button>
-        <button type="button" id="btnDrop">Drop</button>
-    </div>
-</div>
 
 <script src="/js/flv.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
@@ -38,14 +53,22 @@
     }
     
     if (flvjs.isSupported()) {
-        var element = document.getElementsByName('videoElement1')[0];
-        var flvPlayer = flvjs.createPlayer({
+        var element1 = document.getElementsByName('videoElement1')[0];
+        var element2 = document.getElementsByName('videoElement2')[0];
+        var flvPlayer1 = flvjs.createPlayer({
             type: 'flv',
             url: 'http://3.20.235.8:8080/live/livestream1.flv'
         });
-        flvPlayer.attachMediaElement(element);
-        flvPlayer.load();
-        flvPlayer.play();
+        flvPlayer1.attachMediaElement(element1);
+        flvPlayer1.load();
+        flvPlayer1.play();
+         var flvPlayer2 = flvjs.createPlayer({
+            type: 'flv',
+            url: 'http://3.20.235.8:8080/live/livestream2.flv'
+        });
+        flvPlayer2.attachMediaElement(element2);
+        flvPlayer2.load();
+        flvPlayer2.play();
     }
 
 </script>

@@ -26,9 +26,7 @@ namespace Claw.Pages
 
 				jsonmessage s = new jsonmessage() { cmd = "req_roomlist" };
 				string ss = JsonSerializer.Serialize(s);
-
-
-                byte[] jsoncmd = Encoding.UTF8.GetBytes(ss);
+				byte[] jsoncmd = Encoding.UTF8.GetBytes(ss);
 				byte[] smsg = new byte[3 + jsoncmd.Length];
 				smsg[0] = (byte)0xda;
 				smsg[1] = (byte)(jsoncmd.Length / 256);
@@ -40,14 +38,15 @@ namespace Claw.Pages
 				int count = clientSocket.Receive(date);
 				string msg = Encoding.UTF8.GetString(date, 0, count);
 				Console.WriteLine(msg);
-
 				clientSocket.Close();
 
-
-
+				//string msg = "{" + "\"rooms\":[\"ACF1E188BE65\"],\"cmd\":\"reply_roomlist\"" + "}";
+				jsonmessage result = JsonSerializer.Deserialize<jsonmessage>(msg);
 				Rooms = new List<string>();
-				Rooms.Add("Machine 1");
-
+				foreach (string r in result.rooms)
+				{
+					Rooms.Add(r);
+				}							
 			}
 			catch
 			{
@@ -67,7 +66,8 @@ namespace Claw.Pages
         //jsstr{"cmd":"exit_room"}
 
         public string cmd { set; get; }
-        public string type { set; get; }
-        public string[] room { set; get; }
+        public int type { set; get; }
+		public string mac { set; get; }
+		public string[] rooms { set; get; }
     }
 }
