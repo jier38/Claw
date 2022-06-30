@@ -31,6 +31,8 @@ namespace Claw.Pages
 
 		public string SendOperation(jsonmessage cmd)
 		{
+			string msg;
+
 			string ss = JsonSerializer.Serialize(cmd);
 			byte[] jsoncmd = Encoding.UTF8.GetBytes(ss);
 			byte[] smsg = new byte[3 + jsoncmd.Length];
@@ -42,7 +44,7 @@ namespace Claw.Pages
 
 			byte[] date = new byte[1024];
 			int count = clientSocket.Receive(date);
-			string msg = Encoding.UTF8.GetString(date, 0, count);
+			msg = Encoding.UTF8.GetString(date, 0, count);
 			Console.WriteLine(msg);
 
 			return msg;

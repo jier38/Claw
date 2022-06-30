@@ -42,13 +42,43 @@
 <script>
     $("#btnStart").click(function() {
         $.get("Room?handler=Start").done(function(res) {
-              
+            alert(res);
+        });
+    });
+    
+     $("#btnUp").click(function() {
+        $.get("Room?handler=Up").done(function(res) {
+              alert(res);
+        });
+    });
+    
+     $("#btnDown").click(function() {
+        $.get("Room?handler=Down").done(function(res) {
+              alert(res);
+        });
+    });
+    
+     $("#btnLeft").click(function() {
+        $.get("Room?handler=Left").done(function(res) {
+              alert(res);
+        });
+    });
+    
+     $("#btnRight").click(function() {
+        $.get("Room?handler=Right").done(function(res) {
+              alert(res);
+        });
+    });
+    
+     $("#btnDrop").click(function() {
+        $.get("Room?handler=Drop").done(function(res) {
+              alert(res);
         });
     });
     
     function HandleOnClose() {
         $.get("Room?handler=Close").done(function(res) {
-              
+              alert(res);
         });
     }
     

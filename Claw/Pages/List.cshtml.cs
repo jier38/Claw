@@ -19,6 +19,7 @@ namespace Claw.Pages
 
 		public void OnGet()
 		{
+			string msg;
 			try
 			{
 				Socket clientSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
@@ -36,11 +37,11 @@ namespace Claw.Pages
 
 				byte[] date = new byte[1024];
 				int count = clientSocket.Receive(date);
-				string msg = Encoding.UTF8.GetString(date, 0, count);
+				msg = Encoding.UTF8.GetString(date, 0, count);
 				Console.WriteLine(msg);
 				clientSocket.Close();
 
-				//string msg = "{" + "\"rooms\":[\"ACF1E188BE65\"],\"cmd\":\"reply_roomlist\"" + "}";
+				msg = "{" + "\"rooms\":[\"ACF1E188BE65\"],\"cmd\":\"reply_roomlist\"" + "}";
 				jsonmessage result = JsonSerializer.Deserialize<jsonmessage>(msg);
 				Rooms = new List<string>();
 				foreach (string r in result.rooms)
