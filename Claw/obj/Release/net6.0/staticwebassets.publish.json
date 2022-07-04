@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "kk3qk9sbLFA/aASDtP+m+QZajICy/+CtgzBBe9dH8hI=",
+  "Hash": "oGBt4Jx7gDyL5djKPqj1hAtPKahgDQrq+QKAUj3W930=",
   "Source": "Claw",
   "BasePath": "_content/Claw",
   "Mode": "Default",
@@ -17,10 +17,10 @@
   ],
   "Assets": [
     {
-      "Identity": "/Users/leo/Documents/GitHub/Claw/Claw/obj/Release/net6.0/scopedcss/bundle/Claw.styles.css",
+      "Identity": "/Users/leo/Documents/GitHub/Claw/Claw/obj/Release/net6.0/ubuntu.22.04-x64/scopedcss/bundle/Claw.styles.css",
       "SourceId": "Claw",
       "SourceType": "Computed",
-      "ContentRoot": "/Users/leo/Documents/GitHub/Claw/Claw/obj/Release/net6.0/scopedcss/bundle/",
+      "ContentRoot": "/Users/leo/Documents/GitHub/Claw/Claw/obj/Release/net6.0/ubuntu.22.04-x64/scopedcss/bundle/",
       "BasePath": "_content/Claw",
       "RelativePath": "Claw.styles.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/leo/Documents/GitHub/Claw/Claw/obj/Release/net6.0/scopedcss/bundle/Claw.styles.css"
+      "OriginalItemSpec": "/Users/leo/Documents/GitHub/Claw/Claw/obj/Release/net6.0/ubuntu.22.04-x64/scopedcss/bundle/Claw.styles.css"
     },
     {
-      "Identity": "/Users/leo/Documents/GitHub/Claw/Claw/obj/Release/net6.0/scopedcss/projectbundle/Claw.bundle.scp.css",
+      "Identity": "/Users/leo/Documents/GitHub/Claw/Claw/obj/Release/net6.0/ubuntu.22.04-x64/scopedcss/projectbundle/Claw.bundle.scp.css",
       "SourceId": "Claw",
       "SourceType": "Computed",
-      "ContentRoot": "/Users/leo/Documents/GitHub/Claw/Claw/obj/Release/net6.0/scopedcss/projectbundle/",
+      "ContentRoot": "/Users/leo/Documents/GitHub/Claw/Claw/obj/Release/net6.0/ubuntu.22.04-x64/scopedcss/projectbundle/",
       "BasePath": "_content/Claw",
       "RelativePath": "Claw.bundle.scp.css",
       "AssetKind": "All",
@@ -48,7 +48,7 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/leo/Documents/GitHub/Claw/Claw/obj/Release/net6.0/scopedcss/projectbundle/Claw.bundle.scp.css"
+      "OriginalItemSpec": "/Users/leo/Documents/GitHub/Claw/Claw/obj/Release/net6.0/ubuntu.22.04-x64/scopedcss/projectbundle/Claw.bundle.scp.css"
     },
     {
       "Identity": "/Users/leo/Documents/GitHub/Claw/Claw/wwwroot/css/site.css",

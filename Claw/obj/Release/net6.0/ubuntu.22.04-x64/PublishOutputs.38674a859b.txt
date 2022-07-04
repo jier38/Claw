@@ -1,0 +1,7 @@
+/Users/leo/Documents/GitHub/Claw/publish/Claw
+/Users/leo/Documents/GitHub/Claw/publish/appsettings.Development.json
+/Users/leo/Documents/GitHub/Claw/publish/appsettings.json
+/Users/leo/Documents/GitHub/Claw/publish/Claw.dll
+/Users/leo/Documents/GitHub/Claw/publish/Claw.deps.json
+/Users/leo/Documents/GitHub/Claw/publish/Claw.runtimeconfig.json
+/Users/leo/Documents/GitHub/Claw/publish/Claw.pdb

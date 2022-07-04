@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Ngmaqw0UpASl/hS9HMbw0FE5gIQj6qIK81PaBqV4268F5Q8twzK/h4s5sK9WW+/45635/aKk/a/zwWsh9iyCvg==",
+  "dgSpecHash": "I0qFZ4WA60iD46SPJM68sef7GJ/Y1tiOMeD+SJQIEjvGt1XmDGC6Ku4E66GzNoftbcP64YXlZnww+JVdBt9ROA==",
   "success": true,
   "projectFilePath": "/Users/leo/Documents/GitHub/Claw/Claw/Claw.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/leo/.nuget/packages/microsoft.netcore.app.host.linux-x64/6.0.6/microsoft.netcore.app.host.linux-x64.6.0.6.nupkg.sha512"
+  ],
   "logs": []
 }
