@@ -40,8 +40,8 @@ namespace Claw.Pages
 				msg = Encoding.UTF8.GetString(date, 0, count);
 				Console.WriteLine(msg);
 				clientSocket.Close();
-
-				msg = "{" + "\"rooms\":[\"ACF1E188BE65\"],\"cmd\":\"reply_roomlist\"" + "}";
+				msg = "{" + msg.Split("{")[1];
+				//msg = "{" + "\"rooms\":[\"ACF1E188BE65\"],\"cmd\":\"reply_roomlist\"" + "}";
 				jsonmessage result = JsonSerializer.Deserialize<jsonmessage>(msg);
 				Rooms = new List<string>();
 				foreach (string r in result.rooms)

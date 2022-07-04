@@ -1,16 +1,20 @@
 ﻿<Properties StartupConfiguration="{CBC85D61-AEFE-4C0D-B491-36823BA17A16}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/leo/Documents/GitHub/Claw/Claw/Pages/List.cshtml.cs" relfile="Claw/Pages/List.cshtml.cs" line="25" column="1" />
+      <Breakpoint file="/Users/leo/Documents/GitHub/Claw/Claw/Pages/Room.cshtml.cs" relfile="Claw/Pages/Room.cshtml.cs" line="24" column="1" />
+      <Breakpoint file="/Users/leo/Documents/GitHub/Claw/Claw/Pages/Room.cshtml.cs" relfile="Claw/Pages/Room.cshtml.cs" line="61" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.Claw PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Claw/Pages/List.cshtml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Claw/Deploy.txt">
     <Files>
-      <File FileName="Claw/Pages/List.cshtml.cs" Line="62" Column="1" />
-      <File FileName="Claw/Pages/Room.cshtml" Line="33" Column="5" />
-      <File FileName="Claw/Pages/Room.cshtml.cs" Line="1" Column="1" />
+      <File FileName="Claw/Pages/List.cshtml.cs" Line="44" Column="1" />
+      <File FileName="Claw/Pages/Room.cshtml" Line="19" Column="27" />
+      <File FileName="Claw/Pages/Room.cshtml.cs" Line="44" Column="28" />
+      <File FileName="Claw/Deploy.txt" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -18,12 +22,11 @@
           <Node name="Claw" expanded="True">
             <Node name="Claw" expanded="True">
               <Node name="Pages" expanded="True">
-                <Node name="List.cshtml" expanded="True">
-                  <Node name="List.cshtml.cs" selected="True" />
-                </Node>
+                <Node name="List.cshtml" expanded="True" />
                 <Node name="Room.cshtml" expanded="True" />
               </Node>
               <Node name="wwwroot" expanded="True" />
+              <Node name="Deploy.txt" selected="True" />
             </Node>
           </Node>
         </State>
@@ -33,4 +36,5 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
 </Properties>

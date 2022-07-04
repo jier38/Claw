@@ -10,21 +10,24 @@
             <tr>
                 <td>
                     <div>
-                        <video name="videoElement1" class="centeredVideo" autoplay></video>
+                        <video name="videoElement1" style="width:300px" class="centeredVideo" autoplay></video>
                     </div>
                 </td>
                 <td>
                     <div>
-                        <video name="videoElement2" class="centeredVideo" autoplay></video>
+                        <video name="videoElement2" style="width:300px" class="centeredVideo" autoplay></video>
                     </div>
                 </td>
             </tr>
             <tr>
                 <td colspan="2">
-                    <div>
+                    <div id="b1">
                         <button type="button" id="btnStart">Start</button>
-                        <button type="button" id="btnUp">Up</button>
-                        <button type="button" id="btnDown">Down</button>
+                    </div>
+                    <div id="b2">
+                        
+                        <button type="button" id="btnUp">Back</button>
+                        <button type="button" id="btnDown">Forward</button>
                         <button type="button" id="btnLeft">Left</button>
                         <button type="button" id="btnRight">Right</button>
                         <button type="button" id="btnDrop">Drop</button>
@@ -40,51 +43,46 @@
         integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
         crossorigin="anonymous"></script>
 <script>
+    $(document).ready(function () {
+        $("#b2").hide();
+    });
+
     $("#btnStart").click(function() {
         $.get("Room?handler=Start").done(function(res) {
-            alert(res);
+            $("#b1").hide();
+            $("#b2").show();
         });
     });
     
      $("#btnUp").click(function() {
-        $.get("Room?handler=Up").done(function(res) {
-              alert(res);
-        });
+        $.get("Room?handler=Up").done(function(res) { });
     });
     
      $("#btnDown").click(function() {
-        $.get("Room?handler=Down").done(function(res) {
-              alert(res);
-        });
+        $.get("Room?handler=Down").done(function(res) { });
     });
     
      $("#btnLeft").click(function() {
-        $.get("Room?handler=Left").done(function(res) {
-              alert(res);
-        });
+        $.get("Room?handler=Left").done(function(res) { });
     });
     
      $("#btnRight").click(function() {
-        $.get("Room?handler=Right").done(function(res) {
-              alert(res);
-        });
+        $.get("Room?handler=Right").done(function(res) { });
     });
     
      $("#btnDrop").click(function() {
         $.get("Room?handler=Drop").done(function(res) {
-              alert(res);
+            alert(res);
+            window.location.href = "/list"
         });
     });
     
     function HandleOnClose() {
-        $.get("Room?handler=Close").done(function(res) {
-              alert(res);
-        });
+        $.get("Room?handler=Close").done(function(res) {});
     }
     
     if (flvjs.isSupported()) {
         var element1 = document.getElementsByName('videoElement1')[0];
-        var element2 = document.getElementsByName('videoElement2')[0];
         var flvPlayer1 = flvjs.createPlayer({
             type: 'flv',
             url: 'http://3.20.235.8:8080/live/livestream1.flv'
@@ -92,7 +90,9 @@
         flvPlayer1.attachMediaElement(element1);
         flvPlayer1.load();
         flvPlayer1.play();
-         var flvPlayer2 = flvjs.createPlayer({
+
+        var element2 = document.getElementsByName('videoElement2')[0];
+        var flvPlayer2 = flvjs.createPlayer({
             type: 'flv',
             url: 'http://3.20.235.8:8080/live/livestream2.flv'
         });
