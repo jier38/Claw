@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Jgg3/ckzweWcJ1nShiNiECSS1slurCt7VxMuPPcrTVareCp+Fxe6zyuT7Msi1zLplmHreVq1u4fqUqG+QZ90fg==",
+  "dgSpecHash": "H2/UpDNK45Et1VSg3Zc5hNZ3OaTNCJ3ywEcasvKmpPQ6lMHq1PGjuEW2IKlczABiPF4MaRy7onEqL7fX7HqgIA==",
   "success": true,
   "projectFilePath": "D:\\TEMP\\Claw\\Claw\\Claw.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\john_huang\\.nuget\\packages\\microsoft.netcore.app.host.linux-x64\\6.0.6\\microsoft.netcore.app.host.linux-x64.6.0.6.nupkg.sha512"
+  ],
   "logs": []
 }

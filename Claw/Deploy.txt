@@ -1,6 +1,4 @@
-﻿dotnet publish -c Release -o D:\TEMP\Claw\publish
-
-dotnet publish --framework net6.0 --runtime ubuntu.22.04-x64 --output "publish" --configuration Release  --no-self-contained
+﻿dotnet publish --framework net6.0 --runtime ubuntu.22.04-x64 --output "publish" --configuration Release  --no-self-contained
 
 
 
