@@ -12,7 +12,7 @@ namespace Claw.Pages
 		private readonly ILogger<ListModel> _logger;
 		private static Socket clientSocket;
 		string room;
-
+		int game_ret = 0;
 
         public RoomModel(ILogger<RoomModel> logger)
 		{
@@ -74,7 +74,8 @@ namespace Claw.Pages
             jsonmessage cmd = new jsonmessage() { cmd = "start_game" };
 			string result = SendOperation(cmd);
             byte[] date = new byte[1024];
-            return Content(DateTime.Now.Ticks.ToString() + ": Game Start");
+			Thread.Sleep(2000);
+			return Content(DateTime.Now.Ticks.ToString() + ": Game Start");
 		}
 
 		public IActionResult OnGetUp()
@@ -132,7 +133,7 @@ namespace Claw.Pages
 			Thread.Sleep(10000);
 
             Console.WriteLine(msg);
-            return Content(DateTime.Now.Ticks.ToString() + ":You loss");
+            return Content(DateTime.Now.Ticks.ToString() + (game_ret==1 ? ":You win" : ":You loss"));
 		}
 
 		public IActionResult OnGetClose()
@@ -158,21 +159,25 @@ namespace Claw.Pages
 					// 往下就自己寫接收到來自Client端的資料後要做什麼事唄~^^”
 					string msg = Encoding.UTF8.GetString(data, 0, intAcceptData);
 					msg = "{" + msg.Split("{")[1];
-					jsonmessage result = JsonSerializer.Deserialize<jsonmessage>(msg);
-					switch(result.cmd)
+					if (msg.IndexOf("cmd") > 0)
 					{
-						case "start_game":
+						jsonmessage result = JsonSerializer.Deserialize<jsonmessage>(msg);
+						switch (result.cmd)
+						{
+							case "start_game":
 
 
-							break;
-						case "game_ret":
+								break;
+							case "game_ret":
+								game_ret = result.ret;
+
+								break;
 
 
-							break;
 
-
-
+						}
 					}
+					
 
 				}
             }

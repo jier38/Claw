@@ -5,16 +5,23 @@
 }
 <h1>@ViewData["Title"]</h1>
 
-@foreach(string room in Model.Rooms)
-{
-    <div>
-    <div>
-    <a href="/Room?id=@room">
-        <img src="res/doll.png" width="150px" height="200px" />
-    </a>    
 
-    </div>
-    <div>@room</div>
-    </div>
+@if(Model.Rooms.Count > 0) {
+    foreach(string room in Model.Rooms)
+    {
+        <div>
+        <div>
+        <a href="/Room?id=@room">
+            <img src="~/static/res/doll.png" width="150px" height="200px" />
+        </a>    
+
+        </div>
+        <div>@room</div>
+        </div>
+    }
+} else {
+    <div>Room empty.</div>
 }
+
+
 
