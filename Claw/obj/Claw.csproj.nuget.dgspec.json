@@ -1,28 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "/Users/leo/Documents/GitHub/Claw/Claw/Claw.csproj": {}
+    "D:\\TEMP\\Claw\\Claw\\Claw.csproj": {}
   },
   "projects": {
-    "/Users/leo/Documents/GitHub/Claw/Claw/Claw.csproj": {
+    "D:\\TEMP\\Claw\\Claw\\Claw.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/leo/Documents/GitHub/Claw/Claw/Claw.csproj",
+        "projectUniqueName": "D:\\TEMP\\Claw\\Claw\\Claw.csproj",
         "projectName": "Claw",
-        "projectPath": "/Users/leo/Documents/GitHub/Claw/Claw/Claw.csproj",
-        "packagesPath": "/Users/leo/.nuget/packages/",
-        "outputPath": "/Users/leo/Documents/GitHub/Claw/Claw/obj/",
+        "projectPath": "D:\\TEMP\\Claw\\Claw\\Claw.csproj",
+        "packagesPath": "C:\\Users\\john_huang\\.nuget\\packages\\",
+        "outputPath": "D:\\TEMP\\Claw\\Claw\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "/Users/leo/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\john_huang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -50,12 +53,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.NETCore.App.Host.linux-x64",
-              "version": "[6.0.6, 6.0.6]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -64,12 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.301/RuntimeIdentifierGraph.json"
-        }
-      },
-      "runtimes": {
-        "ubuntu.22.04-x64": {
-          "#import": []
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }

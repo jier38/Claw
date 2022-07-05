@@ -35,8 +35,8 @@ namespace Claw.Pages
 				jsoncmd.CopyTo(smsg, 3);
 				clientSocket.Send(smsg);
 
-				byte[] date = new byte[1024];
-				int count = clientSocket.Receive(date);
+				byte[] data = new byte[1024];
+				int count = clientSocket.Receive(data);
 				msg = Encoding.UTF8.GetString(date, 0, count);
 				Console.WriteLine(msg);
 				clientSocket.Close();
@@ -70,5 +70,6 @@ namespace Claw.Pages
         public int type { set; get; }
 		public string mac { set; get; }
 		public string[] rooms { set; get; }
+		public int ret { set; get; }
     }
 }

@@ -26,15 +26,24 @@ namespace Claw.Pages
             clientSocket.SendTimeout = 0;
             clientSocket.ReceiveTimeout = 0;
             clientSocket.Connect(new IPEndPoint(IPAddress.Parse("3.20.235.8"), 7771));
-            jsonmessage cmd = new jsonmessage() { cmd = "enter_room", mac = room };
-            string result = SendOperation(cmd);
+			Thread.Sleep(1000);
+			if (clientSocket.Connected)
+			{
+				try
+				{
+					Thread SckSReceiveTd = new Thread(SckSReceiveProc);
+					SckSReceiveTd.Start();
+					
+					jsonmessage cmd = new jsonmessage() { cmd = "enter_room", mac = room };
+					string result = SendOperation(cmd);
+				}
+				catch (Exception ex)
+				{
+
+				}
+			}
         }
 
-		private void EnterRoom()
-        {
-          
-
-        }
 
         public string SendOperation(jsonmessage cmd)
 		{
@@ -134,6 +143,43 @@ namespace Claw.Pages
 			return Content(DateTime.Now.Ticks.ToString() + "Room Close");
 		}
 
-      
+
+        private void SckSReceiveProc()
+        {
+            try
+            {
+                string strAcceptData = string.Empty;
+                int intAcceptData;
+                byte[] data = new byte[1024];
+                while (clientSocket != null && clientSocket.Connected)
+                {
+
+                    intAcceptData = clientSocket.Receive(data);
+					// 往下就自己寫接收到來自Client端的資料後要做什麼事唄~^^”
+					string msg = Encoding.UTF8.GetString(data, 0, intAcceptData);
+					msg = "{" + msg.Split("{")[1];
+					jsonmessage result = JsonSerializer.Deserialize<jsonmessage>(msg);
+					switch(result.cmd)
+					{
+						case "start_game":
+
+
+							break;
+						case "game_ret":
+
+
+							break;
+
+
+
+					}
+
+				}
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
     }
 }
