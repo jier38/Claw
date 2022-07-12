@@ -24,7 +24,7 @@ namespace Claw.Pages
             room = Request.HttpContext.Request.QueryString.Value.Replace("?id=", "");
             clientSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
             clientSocket.SendTimeout = 0;
-            clientSocket.ReceiveTimeout = 0;
+            clientSocket.ReceiveTimeout = 1000;
             clientSocket.Connect(new IPEndPoint(IPAddress.Parse("3.20.235.8"), 7771));
 			Thread.Sleep(1000);
 			if (clientSocket.Connected)
@@ -147,44 +147,50 @@ namespace Claw.Pages
 
         private void SckSReceiveProc()
         {
-            try
-            {
-                string strAcceptData = string.Empty;
-                int intAcceptData;
-                byte[] data = new byte[1024];
                 while (clientSocket != null && clientSocket.Connected)
                 {
-
-                    intAcceptData = clientSocket.Receive(data);
-					// 往下就自己寫接收到來自Client端的資料後要做什麼事唄~^^”
-					string msg = Encoding.UTF8.GetString(data, 0, intAcceptData);
-					msg = "{" + msg.Split("{")[1];
-					if (msg.IndexOf("cmd") > 0)
-					{
-						jsonmessage result = JsonSerializer.Deserialize<jsonmessage>(msg);
-						switch (result.cmd)
+                    try
+                    {
+                        string strAcceptData = string.Empty;
+                        int intAcceptData;
+                        byte[] data = new byte[1024];
+                        intAcceptData = clientSocket.Receive(data);
+						if (intAcceptData > 0)
 						{
-							case "start_game":
+
+							// 往下就自己寫接收到來自Client端的資料後要做什麼事唄~^^”
+							string msg = Encoding.UTF8.GetString(data, 0, intAcceptData);
+							Console.WriteLine(msg);
+							msg = "{" + msg.Split("{")[1];
+							if (msg.IndexOf("cmd") > 0)
+							{
+								jsonmessage result = JsonSerializer.Deserialize<jsonmessage>(msg);
+								switch (result.cmd)
+								{
+									case "start_game":
 
 
-								break;
-							case "game_ret":
-								game_ret = result.ret;
+										break;
+									case "game_ret":
+										game_ret = result.ret;
 
-								break;
+										break;
 
 
 
+								}
+							}
 						}
-					}
-					
+                     
+
+                    }
+                    catch
+                    {
+
+                    }
+                   
 
 				}
-            }
-            catch (Exception ex)
-            {
-
-            }
         }
     }
 }
