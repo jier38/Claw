@@ -1,7 +1,0 @@
-D:\TEMP\Claw\publish\Claw
-D:\TEMP\Claw\publish\appsettings.Development.json
-D:\TEMP\Claw\publish\appsettings.json
-D:\TEMP\Claw\publish\Claw.dll
-D:\TEMP\Claw\publish\Claw.deps.json
-D:\TEMP\Claw\publish\Claw.runtimeconfig.json
-D:\TEMP\Claw\publish\Claw.pdb

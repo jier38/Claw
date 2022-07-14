@@ -1,7 +1,0 @@
-/Users/leo/Documents/GitHub/Claw/D:/TEMP/Claw/publish/Claw
-/Users/leo/Documents/GitHub/Claw/D:/TEMP/Claw/publish/appsettings.Development.json
-/Users/leo/Documents/GitHub/Claw/D:/TEMP/Claw/publish/appsettings.json
-/Users/leo/Documents/GitHub/Claw/D:/TEMP/Claw/publish/Claw.dll
-/Users/leo/Documents/GitHub/Claw/D:/TEMP/Claw/publish/Claw.deps.json
-/Users/leo/Documents/GitHub/Claw/D:/TEMP/Claw/publish/Claw.runtimeconfig.json
-/Users/leo/Documents/GitHub/Claw/D:/TEMP/Claw/publish/Claw.pdb

@@ -1,7 +1,0 @@
-D:\TEMP\Claw\Claw\obj\Release\net6.0\PubTmp\Out\Claw.exe
-D:\TEMP\Claw\Claw\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
-D:\TEMP\Claw\Claw\obj\Release\net6.0\PubTmp\Out\appsettings.json
-D:\TEMP\Claw\Claw\obj\Release\net6.0\PubTmp\Out\Claw.dll
-D:\TEMP\Claw\Claw\obj\Release\net6.0\PubTmp\Out\Claw.deps.json
-D:\TEMP\Claw\Claw\obj\Release\net6.0\PubTmp\Out\Claw.runtimeconfig.json
-D:\TEMP\Claw\Claw\obj\Release\net6.0\PubTmp\Out\Claw.pdb

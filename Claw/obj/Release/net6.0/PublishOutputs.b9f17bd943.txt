@@ -1,7 +1,0 @@
-/Users/leo/Documents/GitHub/Claw/Claw/bin/Release/net6.0/publish/Claw
-/Users/leo/Documents/GitHub/Claw/Claw/bin/Release/net6.0/publish/appsettings.Development.json
-/Users/leo/Documents/GitHub/Claw/Claw/bin/Release/net6.0/publish/appsettings.json
-/Users/leo/Documents/GitHub/Claw/Claw/bin/Release/net6.0/publish/Claw.dll
-/Users/leo/Documents/GitHub/Claw/Claw/bin/Release/net6.0/publish/Claw.deps.json
-/Users/leo/Documents/GitHub/Claw/Claw/bin/Release/net6.0/publish/Claw.runtimeconfig.json
-/Users/leo/Documents/GitHub/Claw/Claw/bin/Release/net6.0/publish/Claw.pdb

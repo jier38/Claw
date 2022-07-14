@@ -1,11 +1,15 @@
 ﻿<Properties StartupConfiguration="{CBC85D61-AEFE-4C0D-B491-36823BA17A16}|Default">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Claw/Pages/Room.cshtml.cs">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Claw PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Claw/Deploy.txt">
     <Files>
-      <File FileName="Claw/Pages/List.cshtml.cs" Line="44" Column="7" />
-      <File FileName="Claw/Pages/Room.cshtml" Line="73" Column="38" />
-      <File FileName="Claw/Pages/Room.cshtml.cs" Line="4" Column="26" />
-      <File FileName="Claw/Deploy.txt" Line="10" Column="1" />
+      <File FileName="Claw/Pages/Room.cshtml.cs" Line="82" Column="1" />
+      <File FileName="Claw/Deploy.txt" Line="2" Column="1" />
+      <File FileName="Claw/Program.cs" Line="28" Column="1" />
+      <File FileName="Claw/Pages/Room.cshtml" Line="18" Column="52" />
+      <File FileName="Claw/Pages/List.cshtml.cs" Line="28" Column="4" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -14,9 +18,7 @@
             <Node name="Claw" expanded="True">
               <Node name="Pages" expanded="True">
                 <Node name="List.cshtml" expanded="True" />
-                <Node name="Room.cshtml" expanded="True">
-                  <Node name="Room.cshtml.cs" selected="True" />
-                </Node>
+                <Node name="Room.cshtml" expanded="True" />
               </Node>
               <Node name="wwwroot" expanded="True" />
             </Node>
@@ -28,10 +30,9 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.Claw PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/leo/Documents/GitHub/Claw/Claw/Pages/Room.cshtml.cs" relfile="Claw/Pages/Room.cshtml.cs" line="288" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>
