@@ -24,3 +24,4 @@
 /Users/leo/Documents/GitHub/Claw/Claw/obj/Release/net6.0/ubuntu.22.04-x64/Claw.pdb
 /Users/leo/Documents/GitHub/Claw/Claw/obj/Release/net6.0/ubuntu.22.04-x64/Claw.genruntimeconfig.cache
 /Users/leo/Documents/GitHub/Claw/Claw/obj/Release/net6.0/ubuntu.22.04-x64/ref/Claw.dll
+/Users/leo/Documents/GitHub/Claw/Claw/bin/Release/net6.0/ubuntu.22.04-x64/claw.out

@@ -20,6 +20,11 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Deploy.txt</LastGenOutput>
     </None>
+    <None Update="claw.out">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </None>
   </ItemGroup>
 
   <ItemGroup>

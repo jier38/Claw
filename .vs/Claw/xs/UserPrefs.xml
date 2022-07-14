@@ -1,27 +1,18 @@
 ﻿<Properties StartupConfiguration="{CBC85D61-AEFE-4C0D-B491-36823BA17A16}|Default">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Claw PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workbench ActiveDocument="Claw/Deploy.txt">
     <Files>
       <File FileName="Claw/Pages/Room.cshtml.cs" Line="82" Column="1" />
-      <File FileName="Claw/Deploy.txt" Line="2" Column="1" />
+      <File FileName="Claw/Deploy.txt" Line="1" Column="125" />
       <File FileName="Claw/Program.cs" Line="28" Column="1" />
       <File FileName="Claw/Pages/Room.cshtml" Line="18" Column="52" />
       <File FileName="Claw/Pages/List.cshtml.cs" Line="28" Column="4" />
+      <File FileName="Claw/claw.json" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Claw" expanded="True">
-            <Node name="Claw" expanded="True">
-              <Node name="Pages" expanded="True">
-                <Node name="List.cshtml" expanded="True" />
-                <Node name="Room.cshtml" expanded="True" />
-              </Node>
-              <Node name="wwwroot" expanded="True" />
-            </Node>
+            <Node name="Claw" expanded="True" />
           </Node>
         </State>
       </Pad>
@@ -30,6 +21,10 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Claw PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/leo/Documents/GitHub/Claw/Claw/Pages/Room.cshtml.cs" relfile="Claw/Pages/Room.cshtml.cs" line="288" column="1" />
